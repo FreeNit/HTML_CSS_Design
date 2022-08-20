@@ -1,3 +1,11 @@
+/* Declaration Order */
+
+/* 1.Positioning */
+/* 2.Box Model */
+/* 3.Typography */
+/* 4.Visual */
+/* 5.Mics */
+
 /*
 SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
@@ -5,6 +13,13 @@ SPACING SYSTEM (px)
 FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
+
+/* 
+MAIN COLOR: #087f5b;
+GREY COLOR: #343a40;
+*/
+
+
 
 * {
   margin: 0;
@@ -16,7 +31,9 @@ FONT SIZE SYSTEM (px)
 /* GENERAL STYLES */
 /* ------------------------ */
 body {
-  font-family: sans-serif;
+  font-family: 'Inter', sans-serif;
+  color: #343a40;
+  border-bottom: 8px solid #087f5b;
 }
 
 .container {
@@ -31,12 +48,48 @@ section {
 
 h2 {
   margin-bottom: 48px;
+  font-size: 36px;
+  letter-spacing: -0.5px; 
+  /* 24 / 30 / 36 */
 }
 
 .grid-3-cols {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 80px;
+}
+
+.btn:link,
+.btn:visited {
+/* Positioning */
+
+/* Box Model */
+display: inline-block;
+
+/* Typography */
+color: #fff;
+text-decoration: none;
+text-transform: uppercase;
+font-weight: 500;
+/* Visual */
+background-color: #087f5b;
+
+/* Mics */
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #099268;
+}
+
+.btn--big{
+  font-size: 18px;
+  padding: 16px 32px; 
+}
+
+.btn--small {
+  font-size: 14px;
+  padding: 8px 12px;
 }
 
 /* ------------------------ */
@@ -53,10 +106,16 @@ header {
 
 .header-text-box {
   align-self: center;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 h1 {
   margin-bottom: 24px;
+  font-size: 44px;
+  /* 44 / 52/ 62 */
+  line-height: 1.1;
+  letter-spacing: -1px;
 }
 
 .header-text {
@@ -72,14 +131,20 @@ img {
 }
 
 .features-title {
+  font-size: 20px;
   margin-bottom: 16px;
 }
 
 .features-text {
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 /* TESTIMONIAL */
 .testimonial-section {
+  background-color: #087f5b;
+  color: #fff;
+  padding: 24px;
 }
 
 .testimonial-box {
@@ -88,10 +153,13 @@ img {
 }
 
 .testimonial-box h2 {
+  font-size: 24px;
   margin-bottom: 24px;
 }
 
 .testimonial-text {
+  font-size: 18px;
+  line-height: 1.7;
   font-style: italic;
   margin-bottom: 24px;
 }
@@ -102,6 +170,7 @@ img {
 }
 
 h3 {
+  font-size: 20px;
   margin-bottom: 24px;
 }
 
@@ -125,10 +194,18 @@ h3 {
 }
 
 .chair-price {
+  font-size: 20px;
   display: flex;
   justify-content: space-between;
 }
 
 footer {
+/* 1.Positioning */
   margin-bottom: 48px;
+/* 2.Box Model */
+/* 3.Typography */
+  font-size: 14px;
+  color: #495057;
+/* 4.Visual */
+/* 5.Mics */
 }
